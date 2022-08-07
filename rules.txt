@@ -28,13 +28,13 @@ balkanweb.com#$#.news-tag-list li a{background-color:#777!important;}
 
 
 
+
 top-channel.tv#$#.popnews.single .bigGalleryBox .imageHolder .galleryNav{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryRight{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryLeft{top:0!Important;}
 top-channel.tv#$#.showSlider a{float:left;width:20%!important;}
 top-channel.tv#$#.grayBG{background-color:#17191a;}
 top-channel.tv#$#.siteContainer .contentWrapper{background-color:#17191a;}
-top-channel.tv#$#.featureSidebar .sideArticles .sideContainer .sideArticle:nth-child(odd){background-color:#17191a;}
 top-channel.tv#$#.galleryGrid .galleryContainer .gallery .galleryInner{background-color:#17191a;}
 top-channel.tv#$#.featuredGrid .articles .article .articleTitle{background-color:#17191a;}
 top-channel.tv#$#.featuredGrid .articles .article.article-1 .articleTitle{background-color:#17191a;}
@@ -42,7 +42,6 @@ top-channel.tv#$#.customCategorySideStories .popTitle{background-color:#17191a;}
 top-channel.tv#$#.theVideos{background-color:#17191a;}
 top-channel.tv#$#.whiteBG {background-color:#17191a;color:#fff!important;}
 top-channel.tv#$#.videoFeature{background-color:#17191a;color:#fff!important;}
-top-channel.tv#$#.featureSidebar .sideArticles .sideContainer .sideArticle:nth-child(even){background-color:#17191a;color:#fff!important;}
 top-channel.tv#$#.customCategorySideStories .story:hover{background-color:transparent;}
 top-channel.tv#$#.customCategorySideStories .story:hover .title {color:red!important;}
 top-channel.tv#$#.siteContainer .contentWrapper a:hover{color:red!important;}
@@ -57,4 +56,5 @@ top-channel.tv#$#.siteContainer .contentWrapper a .titleContainer{color:#98ff00!
 top-channel.tv#$#.featureSidebar .sideArticles .sideContainer a .title{color:#98ff00!important;}
 top-channel.tv#$#.siteContainer .contentWrapper .title{color:#98ff00!important;}
 top-channel.tv#$#.theVideos .title{color:#98ff00!important;}
+
 
