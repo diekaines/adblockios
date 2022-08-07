@@ -7,20 +7,21 @@
 ! License: https://unlicense.org/
 
 
-balkanweb.com#?##itro_opaco{display:none!important;}
-balkanweb.com#?##itro_popup{display:none!important;}
-balkanweb.com#?#.social-icons-list{display:none!important;}
-balkanweb.com#?#.to_be_sticky{display:none!important;}
-balkanweb.com#?#.toggle-comments-button{background-color:#17191a;color:#fff;}
-balkanweb.com#?#body{background-color:#17191a;color:#fff;}
-balkanweb.com#?#*{color:#fff!important;}
-balkanweb.com#?#.dark-blue-text{color:#34ff34!important;}
-balkanweb.com#?#.footer-link-group a{color:#34ff34!important;}
-balkanweb.com#?#.main-block-news h3{color:#34ff34!important;}
-balkanweb.com#?#.main-menu a{color:#34ff34!important;}
-balkanweb.com#?#.main-menu li.home.current-menu-item a{color:#34ff34!important;}
-balkanweb.com#?#.news-list-item-info h4{color:#34ff34!important;}
-balkanweb.com#?#body a{color:#34ff34!important;}
-balkanweb.com#?#body a>*{color:#34ff34!important;}
-balkanweb.com#?#.live-ticker-wrapper{background-color:#777!important;}
-balkanweb.com#?#.news-tag-list li a{background-color:#777!important;}
+
+balkanweb.com#$##itro_opaco{display:none!important;}
+balkanweb.com#$##itro_popup{display:none!important;}
+balkanweb.com#$#.social-icons-list{display:none!important;}
+balkanweb.com#$#.to_be_sticky{display:none!important;}
+balkanweb.com#$#.toggle-comments-button{background-color:#17191a;color:#fff;}
+balkanweb.com#$#body{background-color:#17191a;color:#fff;}
+balkanweb.com#$#*{color:#fff!important;}
+balkanweb.com#$#.dark-blue-text{color:#34ff34!important;}
+balkanweb.com#$#.footer-link-group a{color:#34ff34!important;}
+balkanweb.com#$#.main-block-news h3{color:#34ff34!important;}
+balkanweb.com#$#.main-menu a{color:#34ff34!important;}
+balkanweb.com#$#.main-menu li.home.current-menu-item a{color:#34ff34!important;}
+balkanweb.com#$#.news-list-item-info h4{color:#34ff34!important;}
+balkanweb.com#$#body a{color:#34ff34!important;}
+balkanweb.com#$#body a>*{color:#34ff34!important;}
+balkanweb.com#$#.live-ticker-wrapper{background-color:#777!important;}
+balkanweb.com#$#.news-tag-list li a{background-color:#777!important;}
