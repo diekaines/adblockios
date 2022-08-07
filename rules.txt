@@ -25,10 +25,6 @@ balkanweb.com#$#body a{color:#34ff34!important;}
 balkanweb.com#$#body a>*{color:#34ff34!important;}
 balkanweb.com#$#.live-ticker-wrapper{background-color:#777!important;}
 balkanweb.com#$#.news-tag-list li a{background-color:#777!important;}
-
-
-
-
 top-channel.tv#$#.popnews.single .bigGalleryBox .imageHolder .galleryNav{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryRight{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryLeft{top:0!Important;}
@@ -56,5 +52,3 @@ top-channel.tv#$#.siteContainer .contentWrapper a .titleContainer{color:#98ff00!
 top-channel.tv#$#.featureSidebar .sideArticles .sideContainer a .title{color:#98ff00!important;}
 top-channel.tv#$#.siteContainer .contentWrapper .title{color:#98ff00!important;}
 top-channel.tv#$#.theVideos .title{color:#98ff00!important;}
-
-
