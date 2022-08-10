@@ -6,7 +6,12 @@
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
 
-
+www.oranews.tv#$#body{background-color:#222!Important;}
+www.oranews.tv#$#.top-section{background-color:#222!Important;}
+www.oranews.tv#$#.col3 .a-card .a-card_content{background-color:#222!Important;}
+www.oranews.tv#$#.last-news{background-color:#222!Important;}
+www.oranews.tv#$#main{background-color:#222!Important;}
+www.oranews.tv#$#*{color:#fff!important;}
 
 balkanweb.com#$##itro_opaco{display:none!important;}
 balkanweb.com#$##itro_popup{display:none!important;}
