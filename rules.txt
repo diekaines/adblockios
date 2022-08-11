@@ -78,3 +78,10 @@ top-channel.tv#$#.siteContainer .contentWrapper .title{color:#98ff00!important;}
 top-channel.tv#$#.theVideos .title{color:#98ff00!important;}
 
 
+joq-albania.com#$#*{background-color:#222!important;color:#fff!important;}
+joq-albania.com#$#a{color:green!important;}
+joq-albania.com#$#a *{color:green!important;}
+joq-albania.com#$#a:hover{color:red!important;}
+joq-albania.com#$#a:hover *{color:red!important;}
+joq-albania.com#$#.swiper-slide *{background-color:rgba(0,0,0,.3)!important;}
+
