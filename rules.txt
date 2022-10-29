@@ -1,10 +1,25 @@
 [Adblock Plus 2.0]
 ! Title: My AdGuard CSS rules
 ! Description: My AdGuard CSS rules
-! Last modified: 02/06/2022
+! Last modified: 20/30/2022
 ! Expires: 1 day
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
+
+! example below matches the A that has the text "9GAGGER" and is a child of  article  .ui-post-creator   ( so article  .ui-post-creator  a   )
+! it matches case sensitive 9GAGGER
+!9gag.com##article:has(.ui-post-creator a:has-text(9GAGGER))
+
+!matches case insensitive 
+!9gag.com##article:has( a:has-text(/Ukraine/i))
+
+9gag.com##article:has( a:has-text(/Ukraine/i))
+9gag.com##article:has( a:has-text(/Ukrainian/i))
+
+9gag.com##article:has( a:has-text(/Russia/i))
+
+9gag.com##article:has( a:has-text(/Iran/i))
+9gag.com##article:has( a:has-text(/Iranian/i))
 
 www.oranews.tv#$#body{background-color:#222!Important;}
 www.oranews.tv#$#.top-section{background-color:#222!Important;}
