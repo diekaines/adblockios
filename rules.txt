@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: My AdGuard CSS rules
 ! Description: My AdGuard CSS rules
-! Last modified: 20/30/2022
+! Last modified: 2/9/2023
 ! Expires: 1 day
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
