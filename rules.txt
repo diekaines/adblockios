@@ -21,6 +21,12 @@
 9gag.com##article:has( a:has-text(/Iran/i))
 9gag.com##article:has( a:has-text(/Iranian/i))
 
+9gag.com##article:has( a:has-text(/palestine/i))
+
+9gag.com##article:has( a:has-text(/gaza/i))
+
+9gag.com##article:has( a:has-text(/hamas/i))
+
 www.oranews.tv#$#body{background-color:#222!Important;}
 www.oranews.tv#$#.top-section{background-color:#222!Important;}
 www.oranews.tv#$#.col3 .a-card .a-card_content{background-color:#222!Important;}
