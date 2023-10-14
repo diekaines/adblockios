@@ -24,6 +24,8 @@
 9gag.com##article:has( a:has-text(/palestine/i))
 
 9gag.com##article:has( a:has-text(/gaza/i))
+9gag.com##article:has( a:has-text(/politics/i))
+9gag.com##article:has( a:has-text(/politic/i))
 
 9gag.com##article:has( a:has-text(/hamas/i))
 
