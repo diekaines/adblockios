@@ -15,7 +15,7 @@
 
 9gag.com##article:has( a:has-text(/Ukraine/i))
 9gag.com##article:has( a:has-text(/Ukrainian/i))
-
+9gag.com##article:has( a:has-text(/israel/i))
 9gag.com##article:has( a:has-text(/Russia/i))
 
 9gag.com##article:has( a:has-text(/Iran/i))
