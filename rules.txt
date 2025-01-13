@@ -6,6 +6,9 @@
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
 
+
+192.168.66.231 pc
+
 ! example below matches the A that has the text "9GAGGER" and is a child of  article  .ui-post-creator   ( so article  .ui-post-creator  a   )
 ! it matches case sensitive 9GAGGER
 !9gag.com##article:has(.ui-post-creator a:has-text(9GAGGER))
