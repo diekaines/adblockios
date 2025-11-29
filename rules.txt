@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: My AdGuard CSS rules
 ! Description: My AdGuard CSS rules
-! Last modified: 6/11/2025
+! Last modified: 7/11/2025
 ! Expires: 1 day
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
@@ -452,6 +452,7 @@ top-channel.tv#$#.showSlider a{float:left;width:20%!important;}
 
 ! Nov 29, 2025 https://joq-albania.com
 ||joq-albania.com/b/esp_oil/325/04-09-2025.gif$image
+||joq-albania.com/b/intermed/31/27-08-2024.gif$image
 
 
 
