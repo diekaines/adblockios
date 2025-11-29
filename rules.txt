@@ -6,12 +6,415 @@
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
 
-! example below matches the A that has the text "9GAGGER" and is a child of  article  .ui-post-creator   ( so article  .ui-post-creator  a   )
-! it matches case sensitive 9GAGGER
-!9gag.com##article:has(.ui-post-creator a:has-text(9GAGGER))
 
-!matches case insensitive 
-!9gag.com##article:has( a:has-text(/Ukraine/i))
+!matches case insensitive, regexp ( will match UKRAINE, UKRAINIAN , UKRAINS )
+9gag.com##article:has( a:has-text(/Ukrain/i))
+
+! matches case insensitive, regexp ( will match Russia, Russian )
+9gag.com##article:has( a:has-text(/Russia/i))
+
+! matches case insensitive, regexp ( will match Iran, Iranian )
+!9gag.com##article:has( a:has-text(/Iran/i))
+
+
+block anonymous
+9gag.com##article:has(a.ui-post-creator__author:has-text(/^9GAGGER$/))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(9GAGGER))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(ztzeipazba))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(slateweevil))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(kyle2jordan))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(grillcorn))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(captv4nx2))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(captv4nx3))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(v4nhels1ng16))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(bronwick77))
+9gag.com##div article:has(a[class=ui-post-creator__author]:has-text(quadratini9))
+9gag.com##li:has(.drawer-menu-item__title:has-text(Russ))
+9gag.com##div article:has-text(Promoted)
+9gag.com##div article:has-text(relationship) 
+9gag.com##div article:has-text(Ukraine)
+9gag.com##div article:has-text(anime)
+9gag.com##div article:has-text(russia)
+9gag.com##div article:has-text(indonesia)
+9gag.com##div article:has-text(slava)
+9gag.com##div article:has-text(lgbt)
+9gag.com##div article:has-text(woke)
+9gag.com##div article:has-text(diversity)
+9gag.com##div article:has-text(erdogan)
+9gag.com##div article:has-text(Epstein)
+9gag.com##div article:has-text(moscovia)
+9gag.com##div article:has-text(politic)
+9gag.com##div article:has-text(putin)
+9gag.com##div article:has-text(india)
+9gag.com##div article:has-text(latest news)
+9gag.com##div article:has-text(pride)
+9gag.com##^xhr:has-text(russia)
+9gag.com##li:has(.drawer-menu-item__title:has-text(Guy))
+
+
+mxpl.js^$domain=9gag.com 
+pushstream.js^$domain=9gag.com 
+marked.js^$domain=9gag.com 
+
+
+||recommend.9gag.com
+
+! italian popups / cookies 
+||cdn.iubenda.com
+||citynews.stgy.ovh/~shared/scripts/_/hb/hb.js
+||citynews.stgy.ovh/~shared/scripts/_/copypaste/copypaste.js
+
+
+
+!block promoted posts
+9gag.com##div article:has(a[class="ui-post-creator__author promoted"])
+!hide campaign in top left corner
+9gag.com##a[class="campaign-banner"]
+!hide certain tags
+9gag.com##div article:has(div[class="post-tag listview"]:has-text(Politics))
+
+
+
+! remove page meta http-equiv  refresh
+www.balkanweb.com,panorama.com.al,www.oranews.tv##+js(refresh-defuser)
+
+! disable script that blocks mouse text selection  ACIS == abort-current-inline-script
+! disables the javascript function "disableSelection" which is on www.gazetatema.net
+www.gazetatema.net##+js(acis, disableSelection )
+!www.oranews.tv##+js(acis, kontroll)
+
+
+!stop files from gfycat.com from being loaded on stop.tvklan
+||gfycat.com^$domain=tvklan.al
+||tomorrow.io
+||cdnimpuls.com/$script
+
+
+
+! 2020-11-04 http://www.gazzettagazzettaatema.net
+||www.gazetatema.net/wp-content/uploads/2018/06/hakobanner.png$image
+||www.gazetatema.net/wp-content/uploads/2020/04/One-stop.gif$image
+
+
+
+||onetrust.com/$script
+||onetrust.com/$image
+||onetrust.com/$css
+
+
+
+||www.syri.net/uploads/syri.net/ads/$image
+||www.syri.net/marketing/$image
+||www.syri.net/marketing/$script
+
+
+
+! 2022-09-29 https://www.syri.net
+@@||www.syri.net/uploads/syri.net/images/*$image,domain=www.syri.net
+
+! the post content div has class "box-section.has-ad" , we don't want to hide it
+www.syri.net##.box-section.has-ad:style(display:block!important) 
+
+
+! 2021-01-13 https://stop.tvklan.al
+||stop.tvklan.al/wp-content/uploads/2015/09/s2.gif$image
+stop.tvklan.al##.mpg-item-2.mpg-item > .mpg-bg-url
+||stop.tvklan.al/wp-content/uploads/2015/09/zepa.gif$image
+||stop.tvklan.al/wp-content/uploads/2015/09/s2.gif$image
+
+
+
+
+
+! 2021-02-11 https://www.oranews.tv
+||www.oranews.tv/wp-content/uploads/2021/01/raiffaisen-bank-janar-2021.gif$image
+||www.oranews.tv/push.js
+
+
+! 2021-07-01 https://sarandaweb.net
+
+*.gif$image,domain=sarandaweb.net 
+sarandaweb.net##a:not([href*="sarandaweb.net"])
+sarandaweb.net##a[href*="sarandaweb.net/product/"]
+sarandaweb.net##a[href*="sarandaweb.net/accommodation/"]
+sarandaweb.net##a[href*="pune"]
+
+sarandaweb.net##a[href*="punonjes"]
+sarandaweb.net##a[href*="sherbime"]
+sarandaweb.net##a[href*="intermedica"]
+sarandaweb.net##div a[href*="category/njoftime"]
+sarandaweb.net##a[href*="sarandaweb.net/shitet"]
+sarandaweb.net##a[href*="shitje"]
+sarandaweb.net##a[href*="shites"]
+sarandaweb.net##a[href*="shiten"]
+sarandaweb.net##a[href*="restorant"]
+
+ 
+
+! 2021-07-26 https://shqiptarja.com
+||shqiptarja.com/template/img/aldent/top_000000.jpg$image
+shqiptarja.com###gradient-back
+
+! 2021-08-23 http://www.panorama.com.al
+www.panorama.com.al##.boost-sf-wrapper-v1
+
+
+||cmp.quantcast.com
+||quantcast.com
+
+||ats-wrapper.privacymanager.io
+||privacymanager.io
+
+! 2021-09-09 https://www.njoftime.com
+||www.njoftime.com/images/biznesi/$image
+||www.njoftime.com/images/biznesi/kerko_Pronajuaj_770.jpg$image
+
+! 2021-09-11 https://joq-albania.com
+
+
+||dynamic-php.abingmedia.com^
+
+||mediadesk.al^$image
+||mediadesk.al^$script
+||util.mediadesk.ai
+||mediadesk.ai^$script
+||static.joq-albania.com/assets/js/jquery.dfp.minchannel
+||static.joq-albania.com/assets/js/bannersys.js
+||medium.al
+||boost.al
+||pahtlf.tech
+||automizely.com
+||elfsight.com
+||ofertadites.com
+||analytics.boostglobal.net^$script
+||cdn.onesignal.com^$script
+
+! 2021-09-11 https://top-channel.tv
+||top-channel.tv/wp-content/themes/topchannel/assets/ext/jscookie/*$script,1p
+||top-channel.tv/wp-content/themes/topchannel/gam.js
+
+
+
+
+! 2021-09-17 https://joq-albania.com
+joq-albania.com##.rrssb-facebook > .popup
+joq-albania.com##.rrssb-twitter > .popup
+joq-albania.com##.socialFooter-wrapper
+joq-albania.com##.boost-sf-wrapper-v1
+||dynamic.joq-albania.com^
+
+||gatorapi.com^$script
+||getbutton.io
+||tomorrow.io
+
+
+
+! 2022-02-15 https://www.tpz.al
+||boostcdn.net/js/$script
+||tpz.al/push.js
+
+
+! 2022-02-21 https://newsbomb.al 
+newsbomb.al##.td_spot_img_all
+newsbomb.al##.moti
+
+! 2022-02-22 https://ngop.tv
+ngop.tv##div[class*="ads-v"]
+ngop.tv##body.home .main-content > p
+
+
+
+
+! 2022-02-27 https://www.gazetatema.net
+||www.gazetatema.net/wp-content/uploads/2018/06/hakobanner.png$image
+
+! 2022-03-02 https://joq-albania.com
+joq-albania.com##.telegram-group
+
+! 2022-03-09 https://durreslajm.al
+||durreslajm.al/app/uploads/2021/05/bmv-porte_1.gif$image
+||durreslajm.al/app/uploads/2021/05/firstfloor_0.gif$image
+||durreslajm.al/app/uploads/2021/05/firstfloor_0.gif$image
+||durreslajm.al/app/uploads/2021/05/firstfloor_0.gif$image
+||durreslajm.al/app/uploads/2021/12/Rimini_page-0001.jpg$image
+||durreslajm.al/app/uploads/2021/12/Rimini_page-0001.jpg$image
+||durreslajm.al/app/uploads/2021/12/Rimini_page-0001.jpg$image
+||durreslajm.al/app/uploads/2021/05/durrahsped.png$image
+||durreslajm.al/app/uploads/2021/12/Poster_2-1-1.png$image
+||durreslajm.al/app/uploads/2021/12/Poster_2-1-1.png$image
+||durreslajm.al/app/uploads/2021/12/Poster_2-1-1.png$image
+||durreslajm.al/app/uploads/2021/05/web-banner-sivig.jpg$image
+||durreslajm.al/app/uploads/2022/03/Banner_$image
+
+! 2022-03-09 https://abcnews.al
+||abcnews.al/wp-content/uploads/2022/03/300x100_ria.gif$image
+
+! 2022-03-23 https://www.shqiperiaime.com.al
+||www.shqiperiaime.com.al/wp-content/uploads/2019/11/reklamo.gif$image
+
+! 2022-03-29 https://www.hapur.al
+||www.hapur.al/wp-content/uploads/2021/09/ashensorhapur.gif$image
+||www.hapur.al/wp-content/uploads/2022/04/agikons.gif$image
+||www.hapur.al/wp-content/uploads/2022/03/353x209.gif$image
+||www.hapur.al/wp-content/uploads/2022/03/353x209.gif$image
+||www.hapur.al/wp-content/uploads/2021/12/enivasili.png$image
+||www.hapur.al/wp-content/uploads/2022/03/300x200.gif$image
+||www.hapur.al/wp-content/uploads/2021/11/intermedica.jpeg$image
+
+! 2022-05-18 https://tvklan.al
+||tvklan.al/wp-content/uploads/2022/05/klanradiodesktop.webp$image
+
+! 2022-05-18 https://www.korrieri.com.al
+||i1.wp.com/www.korrieri.com.al/wp-content/uploads/2020/06/dental.gif?w=696&ssl=1$image
+||i1.wp.com/www.korrieri.com.al/wp-content/uploads/2020/06/dental.gif?w=696&ssl=1$image
+||i1.wp.com/www.korrieri.com.al/wp-content/uploads/2020/06/dental.gif?w=696&ssl=1$image
+||i1.wp.com/www.korrieri.com.al/wp-content/uploads/2020/12/129547651_1076722256112338_6541191433174748091_n.jpg?w=696&ssl=1$image
+||i1.wp.com/www.korrieri.com.al/wp-content/uploads/2020/06/dental.gif?w=696&ssl=1$image
+||ofertadites.com^$domain=korrieri.com.al
+||i2.wp.com/www.korrieri.com.al/wp-content/uploads/2019/11/reklamo.gif?w=696&ssl=1$image
+
+! 2022-05-20 https://www.shqiperiaime.com.al
+||www.shqiperiaime.com.al/wp-content/uploads/2020/06/dental.gif$image
+||www.shqiperiaime.com.al/wp-content/uploads/2020/12/129547651_1076722256112338_6541191433174748091_n.jpg$image
+
+! 2022-05-25 https://abcnews.al
+||abcnews.al/wp-content/uploads/2022/04/Ria-Money-Transfer.gif$image
+
+! 2022-08-08 https://www.dailymail.co.uk
+||i.dailymail.co.uk/i/pix/channelheaders/UKRAINE_MAS.png$image
+
+
+
+! 2022-10-18 https://abcnews.al
+||abcnews.al/wp-content/uploads/2022/09/ria-HOMEPAGE-DESKTOP.gif$image
+
+
+! 2022-12-31 https://pamfleti.net
+||i.imgur.com/2b9EuMS.png$image
+||i.imgur.com/2b9EuMS.png$image
+||i.imgur.com/lFPsRBS.png$image
+||i.imgur.com/QDg3Dji.jpg$image
+
+! 2023-01-25 https://www.gazetatema.net
+||cdnimpuls.com/mediadesk.ai/$image
+
+! 2023-02-15 https://www.topalbaniaradio.com
+www.topalbaniaradio.com###theVideo
+www.topalbaniaradio.com##.birthday
+
+! 2023-02-16 https://shqiptarja.com
+shqiptarja.com##.fullscreen-bg__video
+||shqiptarja.com/template/img/livestream_back_OK.svg$image
+
+! 2023-04-17 https://tvklan.al
+||tvklan.al/wp-content/uploads/2023/04/apliko-ketu-li.gif$image
+
+! 2023-04-18 https://shqiptarja.com
+shqiptarja.com##.albtelecom_wrapper
+
+
+
+
+
+! 2023-08-24 https://www.balkanweb.com
+www.balkanweb.com###itro_popup
+www.balkanweb.com###itro_opaco
+
+
+! 2023-09-30 https://tvklan.al
+||tvklan.al/wp-content/uploads/2023/09/love-island-albania-mobile.png$image
+
+! 2023-10-14 http://gazetashqiptare.al
+gazetashqiptare.al##div.desktoprek
+
+! 2023-10-20 https://gazeta-shqip.com
+gazeta-shqip.com##.mono.article-category
+
+! 2023-10-31 https://shqiptarja.com
+shqiptarja.com##.fullscreen-bg
+
+! 2023-11-15 https://sarandaweb.net
+||sarandaweb.net/wp-content/uploads/2023/10/AUTOBUS-SARANDE-ATHINE.jpeg$image
+
+! 2023-12-11 https://joq-albania.com
+||admin.joq-albania.com/cachedWeb/imagesNew/2023/11/BANNER-300X250.gif$image
+
+
+
+! Jul 2, 2024 https://tvklan.al
+||tvklan.al/media/cola-bg1-OTW6MVP5.jpg$image
+||tvklan.al/media/cola-bg1-OTW6MVP5.jpg$image
+||tvklan.al/media/cola-bg1-OTW6MVP5.jpg$image
+||tvklan.al/media/cola-bg1-OTW6MVP5.jpg$image
+
+
+
+! Jul 30, 2024 https://joq-albania.com
+||joq-albania.com/b/delta/325/23-07-2024.gif$image
+
+! Sep 1, 2024 https://joq-albania.com
+||joq-albania.com/b/intermed/325/27-08-2024.gif$image
+
+! Sep 6, 2024 https://joq-albania.com
+||joq-albania.com/b/delta/325/05-09-2024.gif$image
+
+! Oct 8, 2024 https://joq-albania.com
+||joq-albania.com/b/delta/325/07-10-2024.gif$image
+
+
+! Dec 10, 2024 https://joq-albania.com
+||joq-albania.com/b/delta/325/10-12-2024.gif$image
+
+! Dec 23, 2024 https://geekroom.al
+||geekroom.al/wp-content/uploads/2024/12/Range-Rover-Banner-Geek-Room-Albania-December-2024.gif$image
+||geekroom.al/wp-content/uploads/2024/12/HP_Q1-25_AMD_HP-Pavilion-Aero-Laptop-13-be2005nia-Neptun-ALB_Baneri_ALB_300x250px.jpg$image
+
+
+
+
+! May 12, 2025 https://joq-albania.com
+||joq-albania.com/b/delta/325/25-03-2025.gif$image
+
+
+
+! Jul 5, 2025 https://sarandaweb.net
+||sarandaweb.net/wp-content/uploads/2021/05/ORANGE-1-1.png$image
+
+! Jul 13, 2025 https://stop.tvklan.al
+||stop.tvklan.al/wp-content/uploads/2023/06/s2.gif$image
+||stop.tvklan.al/wp-content/uploads/2023/06/s2.gif$image
+||stop.tvklan.al/wp-content/uploads/2023/06/s2.gif$image
+||stop.tvklan.al/wp-content/uploads/2023/06/bavaria.gif$image
+||stop.tvklan.al/wp-content/uploads/2023/06/348672800_1408810582994091_6741762527087918581_n*.jpg$image
+
+! Jul 23, 2025 https://joq-albania.com
+||joq-albania.com/b/greencoast/325/15-07-2025.gif$image
+
+! Jul 27, 2025 https://stop.tvklan.al
+||stop.tvklan.al/wp-content/uploads/2023/06/ad-stop*.jpg$image
+
+! Aug 23, 2025 https://www.theguardian.com
+www.theguardian.com###slot-body-end
+
+
+! Oct 7, 2025 https://tvklan.al
+tvklan.al##.ng-star-inserted.space-between.flex > div.mob-auto.imp.pc-3x2.bnr-wrapper
+tvklan.al##div.mob-auto.imp.pc-3x2.bnr-wrapper:nth-of-type(1)
+tvklan.al##div.mob-auto.imp.pc-3x2.bnr-wrapper:nth-of-type(2)
+tvklan.al##div.imp.pc-3x2.bnr-wrapper:nth-of-type(2)
+
+
+
+! Nov 7, 2025 https://kohajone.com
+||kohajone.com/wp-content/themes/kohajone/assets/images/rek/s1.gif$image
+
+
+
+
+! Nov 27, 2025 https://www.ipchecktool.com
+||googleads.g.doubleclick.net
+
+
 
 9gag.com##article:has( a:has-text(/Ukraine/i))
 9gag.com##article:has( a:has-text(/Ukrainian/i))
