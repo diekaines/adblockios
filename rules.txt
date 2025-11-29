@@ -450,4 +450,8 @@ top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryLeft{top:0!Importan
 top-channel.tv#$#.showSlider a{float:left;width:20%!important;}
 
 
+! Nov 29, 2025 https://joq-albania.com
+||joq-albania.com/b/esp_oil/325/04-09-2025.gif$image
+
+
 
