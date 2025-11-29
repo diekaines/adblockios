@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: My AdGuard CSS rules
 ! Description: My AdGuard CSS rules
-! Last modified: 2/10/2023
+! Last modified: 2/11/2025
 ! Expires: 1 day
 ! Homepage: https://github.com/diekaines/adblockios
 ! License: https://unlicense.org/
@@ -33,82 +33,18 @@
 
 
 
-www.oranews.tv#$#body{background-color:#222!Important;}
-www.oranews.tv#$#.top-section{background-color:#222!Important;}
-www.oranews.tv#$#.col3 .a-card .a-card_content{background-color:#222!Important;}
-www.oranews.tv#$#.last-news{background-color:#222!Important;}
-www.oranews.tv#$#main{background-color:#222!Important;}
-www.oranews.tv#$#*{color:#fff!important;}
 
 balkanweb.com#$##itro_opaco{display:none!important;}
 balkanweb.com#$##itro_popup{display:none!important;}
 balkanweb.com#$#.social-icons-list{display:none!important;}
 balkanweb.com#$#.to_be_sticky{display:none!important;}
-balkanweb.com#$#.toggle-comments-button{background-color:#17191a;color:#fff;}
-balkanweb.com#$#body{background-color:#17191a;color:#fff;}
-balkanweb.com#$#*{color:#fff!important;}
-balkanweb.com#$#.dark-blue-text{color:#34ff34!important;}
-balkanweb.com#$#.footer-link-group a{color:#34ff34!important;}
-balkanweb.com#$#.main-block-news h3{color:#34ff34!important;}
-balkanweb.com#$#.main-menu a{color:red!important;}
-balkanweb.com#$#.main-menu li.home.current-menu-item a{color:red!important;}
-balkanweb.com#$#.news-list-item-info h4{color:redimportant;}
-balkanweb.com#$#body a{color:red!important;}
-balkanweb.com#$#body a>*{color:red!important;}
-balkanweb.com#$#.live-ticker-wrapper{background-color:#777!important;}
-balkanweb.com#$#.news-tag-list li a{background-color:#777!important;}
 
 
-tvklan.al#$#body{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.lgray-bg{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.gray-bg{background-color:#353535!important;color:#fff;}
-tvklan.al#$##main{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.menu-icons-holder{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.under-sticky-header{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.under-sticky-page-header.category-header-sticky{background-color:#353535!important;color:#fff;}
-tvklan.al#$#header{background-color:#353535!important;color:#fff;}
-tvklan.al#$#.pdt-40{background-color:#353535!important;color:#fff;}
-tvklan.al#$#*{color:#fff!important;font-family:sans-serif!important;}
-tvklan.al#$#body a{color:#34ff34!important;}
-tvklan.al#$#.link a{color:#34ff34!important;}
-tvklan.al#$#body a *{color:#34ff34!important;}
-tvklan.al#$#.post-icon{font-family:post-icons!important;}
-tvklan.al#$#.essbfc-icon{font-family:essb-socialfollowers!important;}
-tvklan.al#$#.fa{font-family:FontAwesome!important;}
 
 top-channel.tv#$#.popnews.single .bigGalleryBox .imageHolder .galleryNav{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryRight{top:0!Important;}
 top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryLeft{top:0!Important;}
 top-channel.tv#$#.showSlider a{float:left;width:20%!important;}
-top-channel.tv#$#.grayBG{background-color:#17191a;}
-top-channel.tv#$#.siteContainer .contentWrapper{background-color:#17191a;}
-top-channel.tv#$#.galleryGrid .galleryContainer .gallery .galleryInner{background-color:#17191a;}
-top-channel.tv#$#.featuredGrid .articles .article .articleTitle{background-color:#17191a;}
-top-channel.tv#$#.featuredGrid .articles .article.article-1 .articleTitle{background-color:#17191a;}
-top-channel.tv#$#.customCategorySideStories .popTitle{background-color:#17191a;}
-top-channel.tv#$#.theVideos{background-color:#17191a;}
-top-channel.tv#$#.whiteBG {background-color:#17191a;color:#fff!important;}
-top-channel.tv#$#.videoFeature{background-color:#17191a;color:#fff!important;}
-top-channel.tv#$#.customCategorySideStories .story:hover{background-color:transparent;}
-top-channel.tv#$#.customCategorySideStories .story:hover .title {color:red!important;}
-top-channel.tv#$#.siteContainer .contentWrapper a:hover{color:red!important;}
-top-channel.tv#$#* .story:hover .title{color:red!important;}
-top-channel.tv#$#.whiteBG *{color:#fff!important;}
-top-channel.tv#$#.videoFeature * {color:#fff!important;}
-top-channel.tv#$#.siteContainer .contentWrapper {color:#fff!important;}
-top-channel.tv#$#.siteContainer .contentWrapper *{color:#fff!important;}
-top-channel.tv#$#a{color:#98ff00!important;}
-top-channel.tv#$#.siteContainer .contentWrapper a{color:#98ff00!important;}
-top-channel.tv#$#.siteContainer .contentWrapper a .titleContainer{color:#98ff00!important;}
-top-channel.tv#$#.featureSidebar .sideArticles .sideContainer a .title{color:#98ff00!important;}
-top-channel.tv#$#.siteContainer .contentWrapper .title{color:#98ff00!important;}
-top-channel.tv#$#.theVideos .title{color:#98ff00!important;}
 
 
-joq-albania.com#$#*{background-color:#222!important;color:#fff!important;}
-joq-albania.com#$#a{color:green!important;}
-joq-albania.com#$#a *{color:green!important;}
-joq-albania.com#$#a:hover{color:red!important;}
-joq-albania.com#$#a:hover *{color:red!important;}
-joq-albania.com#$#.swiper-slide *{background-color:rgba(0,0,0,.3)!important;}
 
