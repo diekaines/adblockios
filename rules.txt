@@ -450,9 +450,14 @@ top-channel.tv#$#.single .bigGalleryBox .imageHolder .galleryLeft{top:0!Importan
 top-channel.tv#$#.showSlider a{float:left;width:20%!important;}
 
 
-! Nov 29, 2025 https://joq-albania.com
-||joq-albania.com/b/esp_oil/325/04-09-2025.gif$image
-||joq-albania.com/b/intermed/31/27-08-2024.gif$image
+! Nov 27, 2025 https://www.ipchecktool.com
+||googleads.g.doubleclick.net
+
+! Dec 1, 2025 https://joq-albania.com
+joq-albania.com##div.mobile-only
+
+! Dec 1, 2025 https://joq-albania.com
+||joq-albania.com/b/
 
 
 
